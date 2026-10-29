@@ -1,0 +1,43 @@
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #222;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.card {
+    position: relative;
+    width: 350px;
+    transform: translateY(3);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 15px;
+    opacity: 0;
+    transition: 0.4s;
+    box-sizing: border-box;
+}
+
+.card:hover .info {
+    opacity: 1;
+}
